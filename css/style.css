@@ -47,7 +47,7 @@ body {
 }
 
 .head:hover::before {
-    height: 75%;
+    height: 40%;
 }
 
 .book-form {
