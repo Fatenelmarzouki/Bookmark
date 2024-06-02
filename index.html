@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bookmark</title>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="img/2899445.png" type="image/x-icon">
+        <link
+            href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+            rel="stylesheet">
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </head>
+
+    <body>
+        <section class="bookmarker text-center">
+            <div class="container d-flex flex-column justify-content-center align-items-center">
+                    <h1 class="head position-relative pt-5 pb-3">Bookmarker</h1>
+                <div class="book-form py-3 w-100">
+                    <h3 class="pb-3"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i
+                            class="fa-solid fa-bookmark"></i></h3>
+                    <form action="" class="py-2 px-3">
+                        <div class="mb-4 text-start">
+                            <label for="siteName" class="mb-2"><i class="fa-solid fa-book-bookmark pe-2"
+                                    style="color: #000000;"></i> Site Name</label>
+                            <input class="form-control" type="text" name="siteName" id="siteName"
+                                placeholder="Bookmark Name">
+                        </div>
+                        <div class="mb-4 text-start">
+                            <label for="siteUrl" class="mb-2 "><i class="fa-solid fa-link pe-2"
+                                    style="color: #000000;"></i> Site URL</label>
+                            <input class="form-control" type="text" name="siteUrl" id="siteUrl"
+                                placeholder="Website URL">
+                        </div>
+                        <button onclick="addURL()" class="btn btn-submit py-2 px-5" type="button">Submit</button>
+                    </form>
+                </div>
+                <div class="table-content w-100">
+                    <table class="table table-light  mt-4">
+                        <thead>
+                            <tr>
+                                <th scope="col">Index</th>
+                                <th scope="col">Website</th>
+                                <th scope="col">Visit</th>
+                                <th scope="col">Delete</th>
+                            </tr>
+                            
+                        </thead>
+                        <tbody id="myData">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <script src="js/main.js"></script>
+    </body>
+
+</html>

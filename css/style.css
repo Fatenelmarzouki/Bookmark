@@ -1,0 +1,131 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: #FEC260;
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    background-color: #F7ECDE;
+}
+
+:root {
+    --PTfamily: "PT Sans Caption",
+        sans-serif;
+    --rightfamily: "Righteous",
+        sans-serif;
+    --pacfamily: "Pacifico",
+        cursive;
+}
+
+.head {
+    font-family: var(--pacfamily);
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    color: rgb(53, 46, 40);
+}
+
+.head::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 15%;
+        left: 0;
+        bottom: 18px;
+    background-color: #fec260;
+    transition: height 0.2s;
+    z-index: -1;
+}
+
+.head:hover::before {
+    height: 75%;
+}
+
+.book-form {
+    border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: #352e28;
+}
+
+.book-form h3 {
+    font-family: var(--rightfamily);
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    color: transparent;
+}
+
+form label {
+    font-family: var(--PTfamily);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #212529;
+}
+
+.form-control:focus {
+    border-color: rgb(254, 194, 96);
+    box-shadow: 0 0 0 .25rem rgba(254, 194, 96, .25);
+}
+
+.btn-submit {
+    --bs-btn-font-family: var(--PTfamily);
+    --bs-btn-line-height: 24px;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #d1512d;
+    --bs-btn-border-color: #d1512d;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #bb4120;
+    --bs-btn-hover-border-color: #a03315;
+}
+
+table {
+    font-family: var(--PTfamily);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+table thead {
+    font-weight: 700;
+}
+
+table tbody {
+    font-weight: 400;
+}
+
+.table>:not(caption)>*>* {
+    padding: 15px;
+}
+
+.table-light {
+    --bs-table-border-color: #c6c7c894;
+}
+
+.btn-visit {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #9eb23b;
+    --bs-btn-border-color: #9eb23b;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #8a9e23;
+    --bs-btn-hover-border-color: #6e8018;
+}
+
+.btn-delete {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #eb1d36;
+    --bs-btn-border-color: #eb1d36;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #d30820;
+    --bs-btn-hover-border-color: #ba081d;
+}
